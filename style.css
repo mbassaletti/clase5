@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Courier New;
+}
+
+:root {
+  --mostrando: silver;
+  --esperando: gray;
+  --flotando: black;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+h1 {
+  color: #8AFF00;
+}
+
+h2 {
+  color: #10FEE2;
+}
+
+.fuente1 {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 900;
+}
+
+.fuente2 {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#bloque {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(calc(90% - 2rem), 500px);
+    height:auto;
+    padding: 1rem;
+    margin: auto;
+    background: black;
+    border-radius: .5rem;
+    z-index: 9999;
+}
+
+p{
+  padding:0.5rem 0;
+}
+
+a{
+    color: #FF00C2;
+    text-decoration: none;
+    transition: all ease 1s;
+}
+
+nav{
+  margin:1rem 0;  
+}
+
+nav a{
+  line-height: 1;
+  text-decoration: none;
+  color:black;
+  margin:0 1rem 0 0;
+  padding:0.3rem 1rem;
+  background:var(--esperando);
+  border-radius: .6rem;
+  transition:all ease .75s;
+}
+
+nav a:hover{
+  color:white;
+  background:var(--flotando);  
+  transition:all ease .75s;
+}
+
+nav a.active{
+  color:black;
+  background:var(--mostrando);
+}
+
+.contenedor-imagen {
+    text-align: center;
+    margin: 0 auto;
+}
+
+img {
+    width: 150px;  /* Ancho de la imagen */
+    height: 150px; /* Alto de la imagen, debe ser igual al ancho */
+    border-radius: 50%; /* Esto crea la forma circular */
+    object-fit: cover; /* Asegura que la imagen llene el círculo sin distorsionarse */
+}
