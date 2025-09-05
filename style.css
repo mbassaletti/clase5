@@ -81,13 +81,13 @@ nav a{
 }
 
 nav a:hover{
-  color:white;
+  color:#6715FF;
   background:var(--flotando);  
   transition:all ease .75s;
 }
 
 nav a.active{
-  color:black;
+  color:#6715FF;
   background:var(--mostrando);
 }
 
