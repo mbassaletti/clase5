@@ -97,8 +97,7 @@ nav a.active{
 }
 
 img {
-    width: 150px;  /* Ancho de la imagen */
-    height: 150px; /* Alto de la imagen, debe ser igual al ancho */
-    border-radius: 50%; /* Esto crea la forma circular */
-    object-fit: cover; /* Asegura que la imagen llene el círculo sin distorsionarse */
-}
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
